@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Tracalorie Calorie | Meal & Tracker</title>
     <link
       rel="stylesheet"
@@ -25,45 +24,47 @@
     </nav>
     <br />
     <div class="container">
-      <div class="card">
-        <div class="card-content">
-          <span class="card-title">Add Meal / Food Item </span>
-          <form class="col">
-            <div class="row">
-              <div class="input field col s6">
-                <input type="text" placeholder="Add Item" id="item-name" />
-                <label for="item-name">Meal</label>
+      <div class="card horizontal">
+        <div class="card-stacked">
+          <div class="card-content">
+            <span class="card-title">Add Meal / Food Item </span>
+            <form class="col">
+              <div class="row">
+                <div class="input-field col s12 m6">
+                  <input type="text" placeholder="Add Item" id="item-name" />
+                  <label for="item-name">Meal</label>
+                </div>
+                <div class="input-field col s12 m6">
+                  <input
+                    type="number"
+                    placeholder="Add Calories"
+                    id="item-calories"
+                  />
+                  <label for="item-calories">Calories</label>
+                </div>
               </div>
-              <div class="input field col s6">
-                <input
-                  type="number"
-                  placeholder="Add Calories"
-                  id="item-calories"
-                />
-                <label for="item-calories">Calories</label>
-              </div>
-            </div>
-            <button class="add-btn btn blue darken-3">
-              <i class="fa fa-plus"></i> Add Meal
-            </button>
-            <button class="update-btn btn orange">
-              <i class="fa fa-pencil-square-o"></i> Update Meal
-            </button>
-            <button class="delete-btn btn red ">
-              <i class="fa fa-remove"></i> Delete Meal
-            </button>
-            <button class="back-btn btn grey right">
-              <i class="fa fa-chevron-circle-left"></i> Back
-            </button>
-          </form>
+              <button class="add-btn btn blue darken-3 hide-on-small-only">
+                <i class="fa fa-plus"></i> Add Meal
+              </button>
+              <button class="update-btn btn orange hide-on-small-only">
+                <i class="fa fa-pencil-square-o"></i> Update Meal
+              </button>
+              <button class="delete-btn btn red hide-on-small-only">
+                <i class="fa fa-remove"></i> Delete Meal
+              </button>
+              <button class="back-btn btn grey right">
+                <i class="fa fa-chevron-circle-left"></i> Back
+              </button>
+            </form>
+          </div>
         </div>
       </div>
       <!-- Calorie Count -->
       <h3 class="center-align">
-        Total Calories : <span class="total-calories">0</span>
+        Total Calories: <span class="total-calories">0</span>
       </h3>
       <!-- Item List -->
-      <ul id="item-list" class="collection"></ul>
+      <ul id="item-list" class="collection center-align"></ul>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
